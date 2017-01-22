@@ -1,0 +1,18 @@
+{
+  "name": "AutomationTestsDemo",
+  "version": "0.0.1",
+  "description": "Automation Tests Demo for Bing page",
+  "private": true,
+  "scripts": {
+    "postinstall": "node ./node_modules/protractor/bin/webdriver-manager update",
+    "test": "node ./node_modules/protractor/bin/protractor test/config.js"
+  },
+  "devDependencies": {
+    "protractor": "^4.0.12",
+    "q": "1.4.1",
+    "mkdirp": "^0.5.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
