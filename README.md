@@ -8,7 +8,7 @@ This project contains some simple tests to be run against MS support page.
 `npm install`
 
 ## Run
-set the test browser firstly
+set the test browser: 
 set|export BROWSER = chrome|firefox|internet explorer
 
 `npm test`
