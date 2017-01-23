@@ -1,7 +1,7 @@
 {
   "name": "AutomationTestsDemo",
   "version": "0.0.1",
-  "description": "Automation Tests Demo for Bing page",
+  "description": "Automation Tests Demo for MS Support page",
   "private": true,
   "scripts": {
     "postinstall": "node ./node_modules/protractor/bin/webdriver-manager update",

@@ -75,6 +75,9 @@ var Common = function() {
             logger.log('clicking submit button');
             return browser.driver.findElement(loginLivePage.getSubmitButtonLocator()).click();
         }).then(function () {
+            logger.log('waiting page to be ready');
+            return self.waitPageToBeReady();
+        }).then(function () {
             logger.log('waiting page back to home');
             return self.waitElementBySelenium(homePage.getAccountNameLinkLocator());
         });
