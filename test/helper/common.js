@@ -23,7 +23,7 @@ var Common = function() {
         logger.log('loading ' + browser.baseUrl);
         return browser.driver.get(browser.baseUrl).then(function () {
             logger.log('setting windows size to 1386x1024');
-            return browser.manage().window().setSize(1386, 1024);
+            return browser.driver.manage().window().setSize(1386, 1024);
         }).then(function () {
             logger.log('waiting for angular to be ready');
             return self.waitAngularToBeAvailable();
